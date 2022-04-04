@@ -1,0 +1,31 @@
+{
+  "name": "phaser-test-webpack-4",
+  "version": "1.0.0",
+  "description": "testing phaser-ce with webpack v4",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack serve --mode development --entry ./src/game.js",
+    "build": "webpack --mode production --entry ./src/game.js --output ./dist/game.js",
+    "dev": "webpack --mode development --entry ./src/game.js --output ./dist/game.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^6.4.1",
+    "css-loader": "^2.1.0",
+    "expose-loader": "^0.7.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "dependencies": {
+    "phaser-ce": "^2.19.2",
+    "webfontloader": "^1.6.28"
+  }
+}
