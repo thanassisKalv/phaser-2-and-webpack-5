@@ -33,9 +33,36 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       },
 
-      { test: /pixi\.js/, use: ["expose-loader?PIXI"] },
-      { test: /phaser-split\.js$/, use: ["expose-loader?Phaser"] },
-      { test: /p2\.js/, use: ["expose-loader?p2"] },
+      {
+        test: /pixi\.js/,
+        loader: 'expose-loader',
+        options: {
+          exposes: {
+            globalName: 'PIXI',
+            override: true
+          },
+        }
+      },
+      {
+        test:/phaser-split\.js$/,
+        loader: 'expose-loader',
+        options: {
+          exposes: {
+            globalName: 'Phaser',
+            override: true
+          },
+        }
+      },
+      {
+        test:/p2\.js/,
+        loader: 'expose-loader',
+        options: {
+          exposes: {
+            globalName: 'p2',
+            override: true
+          },
+        }
+      }
     ]
   },
   plugins: [
