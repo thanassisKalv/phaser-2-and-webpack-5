@@ -1,4 +1,4 @@
-# phaser-2-and-webpack-5
+# Phaser-CE/2 and Webpack v5
 Template project for Phacer-CE (prev phaser-2) and Webpack v5
 
 This is an adaptation for Phaser-2 of this template How to [Setup Phaser 3 with Webpack 4 and Babel](https://saricden.github.io/how-to-setup-phaser3-with-webpack4-and-babel) using the expose-loader as in the case of the original template.
